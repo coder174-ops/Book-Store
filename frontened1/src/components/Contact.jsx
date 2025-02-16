@@ -7,42 +7,22 @@ const Contact = () => {
     <>
       <Navbar />
       <div className=" flex  justify-center mt-15 h-screen dark:bg-slate-900 dark:text-white dark:border">
-        <div className="mt-20 space-y-2 w-[400px] h-[400px] border-0 shadow-2xl px-4 py-9">
-          <h1 className="text-3xl font-bold flex justify-center ">
-            Contact-<span className="text-pink-500">Us</span>
-          </h1>
-          {/* name */}
-          <label className=" flex items-center rounded-md gap-2 text-2sm">
-            Name
-            <input
-              type="name"
-              className="grow rounded px-3 py-0.5"
-              placeholder="Enter Your fullName"
-            />
+      <div className="mt-20 ">
+          <h1 className="text-4xl font-semibold my-4">Contact-<span className="text-pink-500">Us</span> </h1>
+          <div className="flex flex-col shadow-2xl space-y-2 w-[300px]">
+            <label className="">Name
+          <input type="text" placeholder="Enter your fullname" className="outline-none border border-gray-600 hover:border-gray-300  p-2 rounded-md  w-full max-w-xs" />
           </label>
-          {/* Email */}
-          <label className=" flex items-center  gap-2 text-2sm">
-            Email
-            <input
-              type="email"
-              className="grow rounded px-3 py-0.5 "
-              placeholder="tech_neeraj123@gmail.com"
-            />
+          <label className="">Email
+          <input type="text" placeholder="Hello123@gmail.com" className="outline-none border border-gray-600 hover:border-gray-300  p-2 rounded-md w-full max-w-xs" />
           </label>
-          {/* Phone No. */}
-          <label className=" flex items-center  gap-2 text-2sm">
-            phone No.
-            <input
-              type="email"
-              className="grow rounded px-3 py-0.5 "
-              placeholder="Enter your phoneNo."
-            />
-        </label>
-          {/* message */}
-        <textarea className="textarea outline-none border-1 h-30 dark:bg-slate-900 dark:text-white dark:border-white" placeholder="Message me"></textarea>
-        <button className="bg-blue-700 rounded px-3 py-1 hover:bg-blue-800 duration-200 text-white">Submit</button>
-
+          <label className="">Message
+          <textarea className="outline-none border border-gray-600 hover:border-gray-300  p-2 rounded-md w-full max-w-xs h-[130px]" placeholder="Type your Message... " ></textarea>
+          </label>
+          </div>
+          <button className="bg-blue-600 hover:bg-blue-800 duration-200 rounded-md px-3 py-1.5 cursor-pointer">Submit</button>
         </div>
+  
       </div>
       <Footer />
     </>
